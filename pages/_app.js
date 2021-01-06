@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import '../styles/custom.css'
+
 import {CookiesProvider} from "react-cookie"
 
 function MyApp({ Component, pageProps }) {

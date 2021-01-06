@@ -8,7 +8,11 @@ export default function Home() {
                 NEXT JS Starter
             </title>
         </Head>
-        <h1>Hello world</h1>
+        <div className="bg-success min-h-screen flex justify-center items-center">
+            <h1 className="text-white text-5xl font-bold">
+                HELLO WORLD
+            </h1>
+        </div>
     </div>
   )
 }

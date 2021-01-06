@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu');
+
+.bg-primary{
+    background-color: #070d59
+}
+
+.text-primary{
+    color: #070d59
+}
+
+.bg-secondary{
+    background-color: #ee6f57
+}
+
+.text-secondary{
+    color: #ee6f57
+}
+
+.bg-success{
+    background-color: #1f3c88
+}
+
+.text-success{
+    color: #1f3c88
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif !important;
+}
