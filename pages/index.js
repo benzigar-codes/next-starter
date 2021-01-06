@@ -1,18 +1,25 @@
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
+import Navbar from "../components/navbar"
+import {useState as useGlobalState} from '@hookstate/core';
+import globalState from "../model/store"
 
-export default function Home() {
-  return (
-    <div>
-        <Head>
-            <title>
-                NEXT JS Starter
-            </title>
-        </Head>
-        <div className="bg-success min-h-screen flex justify-center items-center">
-            <h1 className="text-white text-5xl font-bold">
-                HELLO WORLD
-            </h1>
+const landingPage = ({}) => {
+    const global = useGlobalState(globalState)
+    const {token} = global.get()
+    const handleClick = () => {};
+    return (
+        <div>
+            <Head>
+                <title>
+                    Sign up
+                </title>
+            </Head>
+            <Navbar/>
+            <h1>Sign up</h1>
+            {token}
         </div>
-    </div>
-  )
+    );
 }
+
+export default landingPage;
